@@ -1,8 +1,12 @@
 # ProHired
 
-## ProHired is a platform for vacancies. It uses latest technology stack: fastAPI, Redis, Docker, microservices.
+## ProHired: A Cutting-Edge Platform for Vacancies
 
-To start the code go to the directory with src inside and run command: 
+ProHired is a modern platform for managing job vacancies, utilizing the latest technology stack including FastAPI, Redis, Docker, and microservices.
+
+## Getting Started
+
+To run the code, navigate to the directory with the `src` folder and execute the following command:
+
 ```bash
 uvicorn src.main:app --reload
-```
