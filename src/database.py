@@ -1,7 +1,6 @@
 from typing import AsyncGenerator
-from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, DeclarativeBase
+from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
+from sqlalchemy.orm import DeclarativeBase
 
 
 from src.config import DB_HOST, DB_NAME, DB_PASS, DB_PORT, DB_USER
@@ -12,13 +11,14 @@ class Base(DeclarativeBase):
     pass
 
 
-engine = create_async_engine(DATABASE_URL)
+async_engine = create_async_engine(DATABASE_URL, echo=True)
 # Base.metadata.create_all(bind=engine)
-async_session_maker = sessionmaker(bind=engine, expire_on_commit=False)
+async_session_maker = async_sessionmaker(async_engine, expire_on_commit=False)
 
 async def create_db_and_tables():
-    async with engine.begin() as conn:
+    async with async_engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+    print("Tables created!")
 
 
 async def get_async_session() -> AsyncGenerator[AsyncSession, None]:

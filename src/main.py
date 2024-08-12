@@ -12,7 +12,6 @@ from contextlib import asynccontextmanager
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await create_db_and_tables()
-    print("Tables created!")
     yield
 
 
@@ -34,3 +33,8 @@ app.include_router(
     prefix="/auth",
     tags=["auth"],
 )
+
+# Define a simple endpoint at the root path that returns "Hello, World!"
+@app.get("/")
+async def root():
+    return {"message": "Welcome to ProHired!"}
