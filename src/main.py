@@ -5,10 +5,18 @@ import src.auth.base_config as auth_base_config
 from src.auth.manager import get_user_manager
 from src.auth.models import User
 from src.auth.schemas import UserRead, UserCreate
+from src.database import create_db_and_tables
+from contextlib import asynccontextmanager
 
 
-app = FastAPI(title="ProHired")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    await create_db_and_tables()
+    print("Tables created!")
+    yield
 
+
+app = FastAPI(title="ProHired", lifespan=lifespan)
 
 fastapi_users = FastAPIUsers[User, int](
     get_user_manager,
@@ -26,4 +34,3 @@ app.include_router(
     prefix="/auth",
     tags=["auth"],
 )
-
