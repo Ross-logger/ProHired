@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  myapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/ProHired/src
+      - ./.env:/ProHired/.env
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: uvicorn src.main:app --reload --port 80

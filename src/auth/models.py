@@ -1,12 +1,9 @@
-from datetime import datetime
-
 from fastapi_users_db_sqlalchemy import SQLAlchemyBaseUserTable
 from sqlalchemy import Table, Column, Integer, String, TIMESTAMP, ForeignKey, JSON, Boolean, MetaData
 
-from src.database import Base
+from ..database import Base
 
 metadata = MetaData()
-
 
 user = Table(
     "user",
@@ -21,6 +18,7 @@ user = Table(
     Column("is_verified", Boolean, default=False, nullable=False),
 )
 
+
 class User(SQLAlchemyBaseUserTable[int], Base):
     id = Column(Integer, primary_key=True)
     email = Column(String, nullable=False)
@@ -30,6 +28,3 @@ class User(SQLAlchemyBaseUserTable[int], Base):
     is_active: bool = Column(Boolean, default=True, nullable=False)
     is_superuser: bool = Column(Boolean, default=False, nullable=False)
     is_verified: bool = Column(Boolean, default=False, nullable=False)
-
-
-

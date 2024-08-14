@@ -10,4 +10,6 @@ COPY ./src /ProHired/src
 
 COPY .env /ProHired/.env
 
+EXPOSE 80
+
 CMD ["uvicorn", "src.main:app", "--reload", "--port", "80"]
