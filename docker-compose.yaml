@@ -12,4 +12,3 @@ services:
       - ./.env:/ProHired/.env
     environment:
       - PYTHONUNBUFFERED=1
-    command: uvicorn src.main:app --reload --port 80

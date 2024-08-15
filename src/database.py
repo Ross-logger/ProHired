@@ -12,13 +12,16 @@ class Base(DeclarativeBase):
     pass
 
 
-async_engine = create_async_engine(DATABASE_URL, echo=True)
+async_engine = create_async_engine(DATABASE_URL, echo=False)
 async_session_maker = async_sessionmaker(async_engine, expire_on_commit=False)
 
 
 async def create_db_and_tables():
-    async with async_engine.begin() as conn:
+    async with async_engine.connect() as conn:
         await conn.run_sync(Base.metadata.create_all)
+        res = await conn.execute(text("SELECT COUNT(*) FROM user;"))
+        print(f"{res.all()}")
+        await conn.commit()
     print("Tables created!")
 
 
