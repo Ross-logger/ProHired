@@ -1,6 +1,6 @@
 # ProHired
 
-## ProHired: A Cutting-Edge Platform for Vacancies
+## ProHired: A Cutting-Edge Platform for Finding Best Job
 
 ProHired is a modern platform for managing job vacancies, utilizing the latest technology stack including FastAPI, Redis, Docker, and microservices.
 
