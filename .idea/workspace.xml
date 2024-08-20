@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ae048e6-9069-4ce4-8b3f-d29325622be2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProHired.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fast_api_crash_course.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c03c3fb-1840-4eb4-817f-23dc22dddd0d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1c03c3fb-1840-4eb4-817f-23dc22dddd0d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/base_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/base_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/schemas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vacancies/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vacancies/schemas.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +220,11 @@
       <workItem from="1723713371649" duration="70000" />
       <workItem from="1723713447869" duration="3111000" />
       <workItem from="1723862767812" duration="16512000" />
-      <workItem from="1723951686458" duration="9210000" />
+      <workItem from="1723951686458" duration="11803000" />
+      <workItem from="1724055982813" duration="1470000" />
+      <workItem from="1724058526297" duration="1550000" />
+      <workItem from="1724061057622" duration="1219000" />
+      <workItem from="1724126286256" duration="12144000" />
     </task>
     <servers />
   </component>
@@ -253,8 +248,8 @@
     </ignored-roots>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProHired$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1723883335222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/ProHired$test.coverage" NAME="test Coverage Results" MODIFIED="1723953805274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProHired$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1724126870519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ProHired$test.coverage" NAME="test Coverage Results" MODIFIED="1724128550053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fast_api_crash_course$calculation.coverage" NAME="calculation Coverage Results" MODIFIED="1723381470018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/mymodules" />
     <SUITE FILE_PATH="coverage/fast_api_crash_course$main.coverage" NAME="main Coverage Results" MODIFIED="1723384356066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/fast_api_crash_course$models.coverage" NAME="models Coverage Results" MODIFIED="1723343465162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db" />
